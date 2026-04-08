@@ -1,0 +1,265 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="seo-title">FinFlow | Smart personal finance</title>
+  <meta id="seo-description" name="description" content="FinFlow helps you track spending, income, and monthly balance with clarity." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="FinFlow" />
+  <meta name="theme-color" content="#0F766E" />
+  <link rel="canonical" href="https://finflow.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FinFlow" />
+  <meta id="og-title" property="og:title" content="FinFlow | Smart personal finance" />
+  <meta id="og-description" property="og:description" content="FinFlow helps you track spending, income, and monthly balance with clarity." />
+  <meta property="og:url" content="https://finflow.app/" />
+  <meta property="og:image" content="https://finflow.app/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta id="twitter-title" name="twitter:title" content="FinFlow | Smart personal finance" />
+  <meta id="twitter-description" name="twitter:description" content="FinFlow helps you track spending, income, and monthly balance with clarity." />
+  <meta name="twitter:image" content="https://finflow.app/og-image.png" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHEL55DVD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QHEL55DVD4');
+  </script>
+
+  <script type="application/ld+json" id="seo-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "FinFlow",
+        "url": "https://finflow.app/",
+        "inLanguage": ["pt-BR", "en"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "FinFlow",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "FinFlow helps users track income, expenses, and monthly balance with a clean and fast experience.",
+        "offers": [
+          { "@type": "Offer", "name": "FinFlow Standard", "category": "Subscription" },
+          { "@type": "Offer", "name": "FinFlow Premium", "category": "Subscription" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .brand-logo {
+      width: 136px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .plan-features li::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--primary);
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+    }
+  </style>
+</head>
+<body data-theme="light">
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="FinFlow">
+      <img
+        id="brand-logo"
+        class="brand-logo"
+        src="./img/logo.png"
+        data-light-src="./img/logo.png"
+        data-dark-src="./img/logo-dark-balanced.png"
+        alt="FinFlow logo" />
+    </a>
+
+    <div class="menu-controls">
+      <button id="lang-toggle" class="btn btn-control" type="button" aria-label="Toggle language">EN</button>
+      <button id="theme-toggle" class="btn btn-control" type="button" aria-label="Toggle theme">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="badge" data-i18n="hero_badge">Controle financeiro pessoal</p>
+      <h1 data-i18n="hero_title">Organize seu dinheiro em segundos, sem planilha complicada.</h1>
+      <p class="subtitle" data-i18n="hero_subtitle">
+        Registre entradas e saidas rapido, acompanhe saldo por conta e veja insights mensais em uma experiencia limpa.
+      </p>
+    </section>
+
+    <section class="cards" id="features" aria-label="Recursos principais">
+      <article class="card">
+        <h2 data-i18n="f1_title">Input rapido</h2>
+        <p data-i18n="f1_desc">Lance transacoes em segundos e mantenha sua rotina financeira em dia.</p>
+      </article>
+      <article class="card">
+        <h2 data-i18n="f2_title">Resumo claro</h2>
+        <p data-i18n="f2_desc">Saldo, receitas e despesas em uma visao simples e objetiva.</p>
+      </article>
+      <article class="card">
+        <h2 data-i18n="f3_title">Insights mensais</h2>
+        <p data-i18n="f3_desc">Entenda para onde seu dinheiro esta indo por categorias e tendencia.</p>
+      </article>
+    </section>
+
+    <section class="app-preview" aria-label="Preview da tela inicial do FinFlow">
+      <div class="preview-shell">
+        <div class="preview-header">
+          <div>
+            <p class="preview-title" data-i18n="preview_greeting">Ola, Cassio Pereira</p>
+            <p class="preview-sub" data-i18n="preview_period">abril 2026 - Todas as contas</p>
+          </div>
+          <div class="preview-month" data-i18n="preview_month">abril 2026</div>
+        </div>
+
+        <div class="preview-cards">
+          <article class="preview-card preview-balance">
+            <span data-i18n="preview_balance_label">SALDO</span>
+            <strong data-i18n="preview_balance_value">R$ 1.548,46</strong>
+          </article>
+          <article class="preview-card preview-income">
+            <span data-i18n="preview_income_label">ENTROU</span>
+            <strong data-i18n="preview_income_value">R$ 2.070,00</strong>
+          </article>
+          <article class="preview-card preview-expense">
+            <span data-i18n="preview_expense_label">SAIU</span>
+            <strong data-i18n="preview_expense_value">R$ 521,54</strong>
+          </article>
+        </div>
+
+        <div class="preview-input">
+          <p class="preview-label" data-i18n="preview_new_entry">NOVO LANCAMENTO</p>
+          <div class="preview-input-row">
+            <div class="preview-select" data-i18n="preview_main_account">Conta principal</div>
+            <div class="preview-text" data-i18n="preview_input_hint">-20 almoco mercado ou +1000 salario</div>
+            <button class="preview-send" type="button" aria-label="Enviar lancamento">></button>
+          </div>
+        </div>
+
+        <div class="preview-list">
+          <div class="preview-list-head">
+            <p data-i18n="preview_recent">Recentes</p>
+            <a href="#plans" data-i18n="preview_view_all">ver todos ></a>
+          </div>
+
+          <div class="preview-item">
+            <div><strong data-i18n="preview_tx_1_name">amigo</strong><span data-i18n="preview_tx_1_meta">Outros ganhos - Conta principal - 08/04</span></div>
+            <em class="is-income" data-i18n="preview_tx_1_amount">+R$ 50,00</em>
+          </div>
+          <div class="preview-item">
+            <div><strong data-i18n="preview_tx_2_name">roupa</strong><span data-i18n="preview_tx_2_meta">Vestuario - Conta principal - 08/04</span></div>
+            <em class="is-expense" data-i18n="preview_tx_2_amount">-R$ 402,94</em>
+          </div>
+          <div class="preview-item">
+            <div><strong data-i18n="preview_tx_3_name">peca do carro</strong><span data-i18n="preview_tx_3_meta">Transporte - Conta principal - 08/04</span></div>
+            <em class="is-expense" data-i18n="preview_tx_3_amount">-R$ 68,60</em>
+          </div>
+          <div class="preview-item">
+            <div><strong data-i18n="preview_tx_4_name">pagamento Marcos</strong><span data-i18n="preview_tx_4_meta">Freelance - Banco A - 07/04</span></div>
+            <em class="is-income" data-i18n="preview_tx_4_amount">+R$ 20,00</em>
+          </div>
+        </div>
+
+        <div class="preview-insight">
+          <p class="preview-insight-label" data-i18n="preview_insight_label">PARA ONDE VAI MEU DINHEIRO</p>
+          <strong data-i18n="preview_insight_text">Voce gasta 19,5% da renda com Vestuario (categoria que mais consome no periodo).</strong>
+          <a href="#features" data-i18n="preview_insight_link">Ver analise completa</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans-grid" aria-label="Planos FinFlow">
+      <article class="plan-card">
+        <div class="plan-card-head">
+          <div class="plan-tag" data-i18n="standard_tag">Standard</div>
+          <p class="plan-price" data-i18n="standard_price">Preco mensal</p>
+        </div>
+        <h4 data-i18n="standard_title">FinFlow Standard</h4>
+        <p class="plan-note" data-i18n="standard_note">Ideal para controle financeiro direto e objetivo.</p>
+        <ul class="plan-features">
+          <li data-i18n="standard_f1">Dashboard financeiro mensal</li>
+          <li data-i18n="standard_f2">Lancamentos por categorias</li>
+          <li data-i18n="standard_f3">Relatorios essenciais</li>
+          <li data-i18n="standard_f4">1 conta financeira</li>
+        </ul>
+        <a id="standard-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/SEU_LINK_STANDARD" target="_blank" rel="noopener noreferrer" data-i18n="standard_cta">Assinar Standard</a>
+      </article>
+
+      <article class="plan-card plan-card-premium">
+        <div class="plan-card-head">
+          <div class="plan-tag" data-i18n="premium_tag">Premium</div>
+          <div class="plan-badge" data-i18n="premium_badge">Mais escolhido</div>
+        </div>
+        <h4 data-i18n="premium_title">FinFlow Premium</h4>
+        <p class="plan-price" data-i18n="premium_price">Preco mensal</p>
+        <p class="plan-note" data-i18n="premium_note">Para quem quer automacao e analise financeira avancada.</p>
+        <ul class="plan-features">
+          <li data-i18n="premium_f1">Tudo do Standard</li>
+          <li data-i18n="premium_f2">Contas financeiras ilimitadas</li>
+          <li data-i18n="premium_f3">Input inteligente com IA</li>
+          <li data-i18n="premium_f4">Insights e analises avancadas</li>
+        </ul>
+        <a id="premium-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/SEU_LINK_PREMIUM" target="_blank" rel="noopener noreferrer" data-i18n="premium_cta">Assinar Premium</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        <span data-i18n="footer_copy_prefix">(c)</span>
+        <span id="year"></span>
+        <span data-i18n="footer_copy_suffix">FinFlow. Todos os direitos reservados.</span>
+      </p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#features" data-i18n="footer_features">Recursos</a>
+        <a href="#plans" data-i18n="footer_plans">Planos</a>
+        <a href="mailto:suporte@finflow.app" data-i18n="footer_contact">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>
+    (function () {
+      var logo = document.getElementById('brand-logo');
+      if (!logo) return;
+
+      function syncLogoWithTheme() {
+        var theme = document.body && document.body.getAttribute('data-theme');
+        var lightSrc = logo.getAttribute('data-light-src');
+        var darkSrc = logo.getAttribute('data-dark-src');
+        logo.src = theme === 'dark' ? darkSrc : lightSrc;
+      }
+
+      syncLogoWithTheme();
+
+      if (document.body) {
+        var observer = new MutationObserver(syncLogoWithTheme);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] });
+      }
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
