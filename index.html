@@ -23,13 +23,19 @@
   <meta name="twitter:image" content="https://finflow.app/og-image.png" />
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHEL55DVD4"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LCYBQ9E07"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-9LCYBQ9E07');
+  </script>
+
+  <script>
+    function trackEvent(eventName, params = {}) {
+      gtag('event', eventName, params);
+    }
   </script>
 
   <script type="application/ld+json" id="seo-jsonld">
@@ -199,7 +205,7 @@
           <li data-i18n="standard_f3">Relatorios essenciais</li>
           <li data-i18n="standard_f4">1 conta financeira</li>
         </ul>
-        <a id="standard-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/SEU_LINK_STANDARD" target="_blank" rel="noopener noreferrer" data-i18n="standard_cta">Assinar Standard</a>
+        <a onclick="trackEvent('select_plan', { plan: 'standard' })" id="standard-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/fZucN4duldoV65J8bnbsc0g" target="_blank" rel="noopener noreferrer" data-i18n="standard_cta">Assinar Standard</a>
       </article>
 
       <article class="plan-card plan-card-premium">
@@ -216,7 +222,7 @@
           <li data-i18n="premium_f3">Input inteligente com IA</li>
           <li data-i18n="premium_f4">Insights e analises avancadas</li>
         </ul>
-        <a id="premium-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/SEU_LINK_PREMIUM" target="_blank" rel="noopener noreferrer" data-i18n="premium_cta">Assinar Premium</a>
+        <a onclick="trackEvent('select_plan', { plan: 'premium' })" id="premium-stripe" class="btn btn-primary btn-block" href="https://buy.stripe.com/28EfZg75X84B79N2R3bsc0h" target="_blank" rel="noopener noreferrer" data-i18n="premium_cta">Assinar Premium</a>
       </article>
     </section>
   </main>
