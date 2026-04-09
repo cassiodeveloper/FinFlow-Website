@@ -1,6 +1,6 @@
 (function () {
-  var STRIPE_STANDARD_URL = 'https://buy.stripe.com/SEU_LINK_STANDARD';
-  var STRIPE_PREMIUM_URL = 'https://buy.stripe.com/SEU_LINK_PREMIUM';
+  var STRIPE_STANDARD_URL = 'https://buy.stripe.com/fZucN4duldoV65J8bnbsc0g';
+  var STRIPE_PREMIUM_URL = 'https://buy.stripe.com/28EfZg75X84B79N2R3bsc0h';
 
   var I18N = {
     pt: {
